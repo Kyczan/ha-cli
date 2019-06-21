@@ -2,6 +2,7 @@ import chalk from 'chalk';
 import clear from 'clear';
 import CLI from 'clui';
 import dotenv from 'dotenv';
+import figlet from 'figlet';
 
 dotenv.config();
 
@@ -13,7 +14,11 @@ const spinner = new Spinner('Toggling switch...');
 
 const run = async () => {
   clear();
+
   console.log(chalk.yellow('Home Automation CLI'));
+  console.log(
+    chalk.yellow(figlet.textSync('ha-cli', { horizontalLayout: 'full' }))
+  );
 
   const { selectedWebhook } = await getWebhook();
 
