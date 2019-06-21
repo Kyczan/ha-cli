@@ -1,0 +1,40 @@
+{
+  "name": "ha-cli",
+  "version": "1.0.0",
+  "description": "Wrapper for IFTTT to control SONOFF devices via cli",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "bin": {
+    "ha-cli": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyczan/ha-cli.git"
+  },
+  "keywords": [
+    "ifttt",
+    "ifttt-webhooks",
+    "sonoff",
+    "ewelink"
+  ],
+  "author": "Krystian Kowal <krystian@kowal.pro>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kyczan/ha-cli/issues"
+  },
+  "homepage": "https://github.com/Kyczan/ha-cli#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "dotenv": "^8.0.0",
+    "esm": "^3.2.25",
+    "inquirer": "^6.4.0"
+  }
+}

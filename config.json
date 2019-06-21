@@ -1,0 +1,20 @@
+{
+  "webhooks": [
+    {
+      "name": "Hall on",
+      "value": "hall_on"
+    },
+    {
+      "name": "Hall off",
+      "value": "hall_off"
+    },
+    {
+      "name": "Bedroom on",
+      "value": "bedroom_on"
+    },
+    {
+      "name": "Bedroom off",
+      "value": "bedroom_off"
+    }
+  ]
+}
