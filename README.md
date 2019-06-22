@@ -2,6 +2,8 @@
 
 home automation CLI
 
+![App](./scroots/app.png)
+
 ## what
 
 This project is a simple wrapper for IFTTT which connects to SONOFF devices and allows to control them via CLI.
