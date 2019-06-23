@@ -1,12 +1,21 @@
 import axios from 'axios';
 
+const getUrl = value =>
+  `https://maker.ifttt.com/trigger/${value}/with/key/${process.env.API_KEY}`;
+
 const sendRequest = async toggle => {
-  const url = `https://maker.ifttt.com/trigger/${toggle}/with/key/${
-    process.env.API_KEY
-  }`;
+  if (!Array.isArray(toggle)) {
+    toggle = [{ value: toggle }];
+  }
+
+  const promises = [];
+  for (let item of toggle) {
+    promises.push(axios.get(getUrl(item.value)));
+  }
+
   try {
-    const response = await axios.get(url);
-    return { status: 'ok', payload: response.data };
+    await Promise.all(promises);
+    return { status: 'ok', payload: 'Congratulations!' };
   } catch (error) {
     return { status: 'error', payload: error.message };
   }

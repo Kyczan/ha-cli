@@ -1,15 +1,16 @@
 import inquirer from 'inquirer';
 
-import config from '../config.json';
+import config from '../config.js';
 
 const getWebhook = () => {
-  const { webhooks } = config;
+  const { groups, webhooks } = config;
+  const choices = [...groups, ...webhooks];
   const selectWebhook = [
     {
       type: 'list',
       name: 'selectedWebhook',
       message: 'Select what to toggle:',
-      choices: webhooks
+      choices
     }
   ];
 

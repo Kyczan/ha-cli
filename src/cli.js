@@ -1,10 +1,7 @@
 import chalk from 'chalk';
 import clear from 'clear';
 import CLI from 'clui';
-import dotenv from 'dotenv';
 import figlet from 'figlet';
-
-dotenv.config();
 
 import getWebhook from './getWebhook';
 import sendRequest from './sendRequest';
