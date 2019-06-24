@@ -15,7 +15,10 @@ const sendRequest = async toggle => {
 
   try {
     await Promise.all(promises);
-    return { status: 'ok', payload: 'Congratulations!' };
+    return {
+      status: 'ok',
+      payload: 'Congratulations! Request has been successfully sent.'
+    };
   } catch (error) {
     return { status: 'error', payload: error.message };
   }

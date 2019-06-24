@@ -8,6 +8,10 @@ const turnOnWebhooks = [
     value: 'bedroom_on'
   },
   {
+    name: 'Bedroom lamp on',
+    value: 'bedroom_lamp_on'
+  },
+  {
     name: 'Kitchen on',
     value: 'kitchen_on'
   },
@@ -29,6 +33,10 @@ const turnOffWebhooks = [
   {
     name: 'Bedroom off',
     value: 'bedroom_off'
+  },
+  {
+    name: 'Bedroom lamp off',
+    value: 'bedroom_lamp_off'
   },
   {
     name: 'Kitchen off',
