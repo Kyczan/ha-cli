@@ -1,55 +1,55 @@
 const turnOnWebhooks = [
   {
     name: 'Hall on',
-    value: 'hall_on'
+    value: 'hall_on',
   },
   {
     name: 'Bedroom on',
-    value: 'bedroom_on'
+    value: 'bedroom_on',
   },
   {
     name: 'Bedroom lamp on',
-    value: 'bedroom_lamp_on'
+    value: 'bedroom_lamp_on',
   },
   {
     name: 'Kitchen on',
-    value: 'kitchen_on'
+    value: 'kitchen_on',
   },
   {
     name: 'WC on',
-    value: 'wc_on'
+    value: 'wc_on',
   },
   {
     name: 'Living room on',
-    value: 'living_on'
-  }
+    value: 'living_on',
+  },
 ];
 
 const turnOffWebhooks = [
   {
     name: 'Hall off',
-    value: 'hall_off'
+    value: 'hall_off',
   },
   {
     name: 'Bedroom off',
-    value: 'bedroom_off'
+    value: 'bedroom_off',
   },
   {
     name: 'Bedroom lamp off',
-    value: 'bedroom_lamp_off'
+    value: 'bedroom_lamp_off',
   },
   {
     name: 'Kitchen off',
-    value: 'kitchen_off'
+    value: 'kitchen_off',
   },
   {
     name: 'WC off',
-    value: 'wc_off'
+    value: 'wc_off',
   },
   {
     name: 'Living room off',
-    value: 'living_off'
-  }
+    value: 'living_off',
+  },
 ];
 
 const webhooks = [...turnOnWebhooks, ...turnOffWebhooks];
@@ -59,14 +59,14 @@ const config = {
   groups: [
     {
       name: 'All off',
-      value: turnOffWebhooks
+      value: turnOffWebhooks,
     },
     {
       name: 'All on',
-      value: turnOnWebhooks
-    }
+      value: turnOnWebhooks,
+    },
   ],
-  webhooks
+  webhooks,
 };
 
 export default config;

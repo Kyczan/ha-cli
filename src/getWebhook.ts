@@ -1,19 +1,19 @@
 import inquirer from 'inquirer';
 
-import config from '../config.js';
+import config from './config';
 
 const getWebhook = () => {
   const { groups, webhooks } = config;
   const choices = [...groups, ...webhooks];
   const selectWebhook = [
     {
-      type: 'list',
-      name: 'selectedWebhook',
+      choices,
       message: 'Select what to toggle:',
-      choices
-    }
+      name: 'selectedWebhook',
+      type: 'list',
+    },
   ];
-
+  // @ts-ignore
   return inquirer.prompt(selectWebhook);
 };
 

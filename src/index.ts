@@ -1,3 +1,8 @@
+#!/usr/bin/env node
+
+import dotenv from 'dotenv';
+dotenv.config({ path: __dirname + '/../.env' });
+
 import chalk from 'chalk';
 import clear from 'clear';
 import CLI from 'clui';
@@ -12,10 +17,10 @@ const spinner = new Spinner('Toggling switch...');
 const run = async () => {
   clear();
 
+  // tslint:disable-next-line: no-console
   console.log(chalk.yellow('Home Automation CLI'));
-  console.log(
-    chalk.yellow(figlet.textSync('ha-cli', { horizontalLayout: 'full' }))
-  );
+  // tslint:disable-next-line: no-console
+  console.log(chalk.yellow(figlet.textSync('ha-cli', { horizontalLayout: 'full' })));
 
   const { selectedWebhook } = await getWebhook();
 
@@ -25,6 +30,7 @@ const run = async () => {
 
   const outputColor = status === 'ok' ? chalk.green : chalk.red;
 
+  // tslint:disable-next-line: no-console
   console.log(outputColor(`${payload}`));
 
   process.exit();
