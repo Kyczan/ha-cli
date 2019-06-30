@@ -8,6 +8,8 @@ home automation CLI
 
 This project is a simple wrapper for IFTTT which connects to SONOFF devices and allows to control them via CLI.
 
+There also exists `dmenu` version of this app: [ha-cli-dmenu](https://github.com/Kyczan/ha-cli-dmenu).
+
 ## why
 
 To control SONOFF devices there is only app for phone ([eWeLink](http://www.ewelink.cc/en/)). This project allows you to control via CLI.
