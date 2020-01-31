@@ -23,6 +23,10 @@ const turnOnWebhooks = [
     name: 'Living room on',
     value: 'living_on',
   },
+  {
+    name: 'Living room lamp on',
+    value: 'living_lamp_on',
+  },
 ];
 
 const turnOffWebhooks = [
@@ -49,6 +53,10 @@ const turnOffWebhooks = [
   {
     name: 'Living room off',
     value: 'living_off',
+  },
+  {
+    name: 'Living room lamp off',
+    value: 'living_lamp_off',
   },
 ];
 

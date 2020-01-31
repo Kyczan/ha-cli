@@ -25,6 +25,7 @@ const run = async () => {
   const { selectedWebhook } = await getWebhook();
 
   spinner.start();
+  // @ts-ignore
   const { status, payload } = await sendRequest(selectedWebhook);
   spinner.stop();
 
